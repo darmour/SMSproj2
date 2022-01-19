@@ -1,0 +1,18 @@
+﻿@model SMSproj2.Models.WebEmail
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Message Sent</h2>
+ 
+<strong>Recipants</strong> : @ViewData["toRecipients"]<br />
+<strong>Subject</strong> : @ViewData["subject"]<br />
+<strong>Message Text</strong> : @ViewData["emailMsg"]<br />
+<p></p>
+<strong>Message Status</strong> : @ViewData["status"]<br />
+
+<div>
+   
+    <a asp-action="Create">Send another message</a>
+</div>

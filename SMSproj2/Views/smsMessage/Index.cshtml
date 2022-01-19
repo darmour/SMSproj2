@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index Page";
+}
+ 
+<h2>Message Sent</h2>
+ 
+<strong>Phone Number</strong> : @ViewData["phoneNumber"]<br />
+<strong>Message Text</strong> : @ViewData["smsMessageTest"]<br />
+<p></p>
+<strong>Message Status</strong> : @ViewData["status"]<br />
+<div>
+   
+    <a asp-action="Create">Send another message</a>
+</div>

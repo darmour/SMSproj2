@@ -1,0 +1,39 @@
+﻿@model SMSproj2.Models.WebEmail
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>WebEmail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="toRecipients" class="control-label">Recipients: </label>
+                <input asp-for="toRecipients" class="form-control" />
+                <span asp-validation-for="toRecipients" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="subject" class="control-label">Subject: </label>
+                <input asp-for="subject" class="form-control" />
+                <span asp-validation-for="subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="emailMsg" class="control-label">Message: </label>
+                <input asp-for="emailMsg" class="form-control" />
+                <span asp-validation-for="emailMsg" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
